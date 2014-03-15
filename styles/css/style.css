@@ -1,0 +1,365 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Tony Termine
+Updated: March 2014
+Notes:	style.css for tonytermine.com/resume
+
+*/
+
+/* --------------------------------------
+	Layout
+	-------------------------------------- */
+
+	#headerContainer {
+		width: 100%;
+		display: block;
+		padding-bottom: 10px;
+		background: #3d3939;
+	}
+
+	#bodyContainerLeft {
+		width: 100%;
+		display: block;
+	}
+
+	#bodyContainerRight {
+		width: 100%;
+		display: block;
+	}
+
+	#footerContainer {
+		width: 100%;
+		display: block;
+		background: #3d3939;
+		margin-top: 20px;
+	}
+/* --------------------------------------
+	Header
+	-------------------------------------- */
+
+	.mainHeader {
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+		font-family: 'roboto_slabregular', serif;
+		text-transform: uppercase;
+		font-size: 2.8em;
+		border-bottom: 2px solid #0b61a4;
+	}
+
+	.mainHeader a,
+	.mainButtons a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	.mainButtons {
+		display: block;
+		margin: 0 auto;
+		width: 95%;
+		padding: 0;
+	}
+
+	.mainButtons li {
+		list-style-type: none;
+		margin-top: 10px;
+		border-radius: 5px;
+	}
+
+	.mainButtons li a {
+		background: #0b61a4;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 1.1em;
+	}
+
+	.mainButtons a:hover {
+		 background-color: #006CC2;
+	}
+
+/* --------------------------------------
+	Body Left
+	-------------------------------------- */
+
+	#bodyContainerLeft span {
+		color: #0b61a4;
+	}
+
+	.headingLeft,
+	.jobTitle,
+	.subTitle,
+	.major {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	.headingLeft {
+		font-family: 'roboto_slabregular', serif;
+		font-size: 1.4em;
+	}
+
+	.jobTitle {
+		color: #0b61a4;
+		font-size: 1.1em;
+	}
+
+	.subTitle {
+		font-weight: bold;
+	}
+
+	#bodyContainerLeft ul li {
+		width: 100%;
+		text-align: left;
+		margin: 0 auto;
+	}
+
+/* --------------------------------------
+	Body Right
+	-------------------------------------- */
+	.button {
+		display: block;
+		width: 60%;
+		border-radius: 5px;
+		margin: 0 auto 1px;
+		text-align: center;
+		text-decoration: none;
+		padding: 10px 0;
+		color: #fff;
+		background: #0b61a4;
+	}
+
+	img {
+		display: block;
+		width: 60%;
+		margin: auto;
+	}
+
+	#bodyContainerRight a:hover {
+		background-color: #006CC2;
+	}
+
+/* --------------------------------------
+	Footer
+	-------------------------------------- */
+
+	.bottomAddress p span,
+	.copy span {
+		color: #66a3d2;
+	}
+
+	.bottomAddress {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		font-size: 1.1em;
+		color: #fff;
+		padding-top: 10px;
+	}
+
+	.bottomIcons ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.bottomIcons ul li {
+		display: inline-block;
+		text-decoration: none;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-bottom: 5%;
+	}
+
+	.bottomIcons ul li a {
+		color: #0b61a4;
+	}
+
+	.copy {
+		display: none;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		color: #fff;
+		padding: 0 0 15px 0;
+		font-size: .8em;
+	}
+
+	.bottomIcons a:hover {
+		 color: #CCDBF1;
+	}
+
+/* --------------------------------------
+	Global Styles
+	-------------------------------------- */
+
+	body {
+		background: url('../../images/brickwall.png') top left repeat;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizelegibility;
+	}
+
+	@font-face {
+	    font-family: 'roboto_slabregular';
+	    src: url('../fonts/RobotoSlab-Regular-webfont.eot');
+	    src: url('../fonts/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/RobotoSlab-Regular-webfont.woff') format('woff'),
+	         url('../fonts/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+	         url('../fonts/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+/* --------------------------------------
+	Media Queries
+	-------------------------------------- */
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+	.mainHeader {
+		font-size: 2.1em;
+	}
+
+	.bottomAddress {
+		font-size: 1em;
+	}
+
+	.bottomIcons ul li {
+		padding-left: 15px;
+		padding-right: 15 px;
+	}
+	}
+
+/* Small Desktop/Laptop to Lg Desktop */
+@media (min-width: 1040px) {
+
+	#headerContainer {
+		height: 120px;
+		padding-bottom: 0;
+	}
+
+	.mainHeader {
+		display: inline-block;
+		width: 40%;
+		border-bottom: none;
+		vertical-align: middle;
+	}
+
+	.mainHeader a {
+		font-family: 'roboto_slabregular', serif;
+		font-size: 1.1em;
+		text-transform: uppercase;
+		border-bottom: 2px solid #0b61a4;
+		margin-left: 7.5%;
+		margin-top: 3%;
+	}
+
+	.mainHeader a,
+	.mainButtons a {
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	.mainButtons {
+		display: inline-block;
+		width: 60%;
+		padding: 0;
+		margin-left: -5px;
+		vertical-align: middle;
+		text-align: right;
+	}
+
+	.mainButtons li {
+		display: inline-block;
+		padding: 10px;
+		margin-right: 2.5%;
+		margin-top: 3.5%;
+	}
+
+	.mainButtons li a {
+		font-size: 1em;
+	}
+
+	#bodyContainerLeft {
+		width: 60%;
+		display: inline-block;
+	}
+	.headingLeft {
+		margin-top: 6.5%;
+	}
+
+	.headingLeft,
+	.jobTitle,
+	.subTitle,
+	.subDetail,
+	.major {
+		width: 100%;
+		display: inline-block;
+		text-align: left;
+		margin-left: 5%;
+	}
+
+	#bodyContainerRight {
+		width: 40%;
+		height: 900px;
+		display: inline-block;
+		margin-left: -5px;
+		vertical-align: top;
+	}
+
+	.button {
+		width: 70%;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		padding: 10px 0;
+		margin-right: 5%;
+		margin-top: 10%;
+		border-radius: 5px;
+		float: right;
+	}
+
+	img {
+		display: block;
+		width: 70%;
+		float: right;
+		margin-right: 5%;
+	}
+
+	.bottomAddress {
+		width: 40%;
+		text-align: right;
+		display: inline-block;
+		vertical-align: middle;
+		padding-top: 0;
+	}
+
+	.copy {
+		width: 100%;
+		display: inline-block;
+		text-align: right;
+	}
+
+	.bottomIcons {
+		width: 60%;
+		display: inline-block;
+		margin-left: -5px;
+		vertical-align: middle;
+		padding-top: 3%;
+	}
+
+	.bottomIcons ul li {
+		display: inline-block;
+		padding-right: 40px;
+	}
+}
